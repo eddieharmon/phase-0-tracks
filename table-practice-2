@@ -1,0 +1,37 @@
+<!doctype html>
+<head>
+  <title>Top Players in the NBA</title>
+</head>
+<body>
+<table border=1>
+  <tr>
+    <th>Name</th>
+    <th>Skills</th>
+    <th>Sponsor</th>
+  </tr>
+  <tr>
+    <td>Lebron James</td>
+    <td>Strength, Playmaking IQ
+    <td>Nike</td>
+    </td>
+  </tr>
+  <tr>
+    <td>Steph Curry</td>
+    <td>Sharpshooting, Ballhandling</td>
+    <td>Under Armour</td>
+  </tr>
+  <tr>
+    <td rowspan="2">James Harden</td>
+    <td>Eurostep, Getting Fouled</td>
+    <td>Adidas</td>
+  </tr>
+  <tr>
+    <td>&nbsp</td>
+  </tr>
+    <td>Russell Westbrook</td>
+    <td>Speed, Tenacity</td>
+    <td>Jordan Brand</td>
+  </tr>
+</table>
+</body>
+</html>
