@@ -1,0 +1,19 @@
+.octopus {
+  position: relative;
+  left: 27em;
+  top: 10em;
+}
+
+.glasses {
+  position: absolute;
+  left: 30em;
+  top: 17em;
+}
+
+.hat {
+  position: absolute;
+  left: 27em;
+  top: 90px;
+}
+
+
