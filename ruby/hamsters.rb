@@ -11,9 +11,9 @@ hamster_age == nil
 puts "Is the hamster a good candidate for adoption? (y/n)"
 adoptable = gets.chomp
 
-if "y"
+if adoptable == "y"
   puts "That's great news!"
-elsif n
+elsif adoptable == "n"
   puts "Awwww, so sad to hear..."
 else
   puts "I don't know what you mean."
