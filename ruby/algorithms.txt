@@ -1,0 +1,35 @@
+Using an Elevator
+
+The robot should proceed toward the elevator and then press the button.
+The button pressed is determined on the direction the robot intends to go to.
+Once the elevator door(s) open, the robot should move to the inside of the elevator.
+Next, turn toward the buttons that usually are on the same side as the door(s).
+These buttons may be illuminated, but if not, they all have numbers.
+The desired floor has a corresponding number to match.
+Floor numbers are usually arranged from highest number to lowest number, top to bottom.
+There may be exceptions, such as “P” for “Penthouse”, or “L” for Lobby, etc.
+The robot should understand the different integers and even and odd numbers.
+Once the robot identifies the button matching its provided destination, it should push it.
+The button will likely illuminate (either brighter or a different color).
+The illumination signifies that the elevator has recognized the command to go there.
+The robot should wait until it has arrived at the floor number it has selected.
+The robot may listen to queues (e.g. another robotic voice announcing the floor arrival).
+The robot may also look for the number outside the elevator door shaft to verify arrival.
+Once destination is reached, robot may exit the elevator car and allow doors to close.
+To get back to original location, repeat steps in the opposite direction.
+
+
+
+
+Making the bed
+
+First get out of bed.
+After exiting the bed turn towards it 
+If there is anything that needs to be removed form the bed, take it off.
+Begin with removing the blanket and /or top sheet (if there are any).
+Affix the fitted sheet so that all four corners of the bed are fully covered.
+Smooth out the sheet so the it looks as uniform as possible without any wrinkles.
+Repeat the most recent two steps above, this time with the top layer sheet.
+Next, repeat the same two steps as previously done, this time with the blanket.
+Lastly, place pillows on the bed where you would like to lay your head.
+Walk away from bed so that you are not tempted to go back to sleep 1 minute later.  
