@@ -31,3 +31,5 @@ else
 end
   employees_remaining = employees_remaining - 1
 end
+
+puts ""Actually, never mind! What do these questions have to do with anything? Let's all be friends.""
