@@ -85,3 +85,17 @@ add_list(new_list,'radish',5)
 remove_list(new_list,'cherries')
 update_list(new_list,'chips',10)
 print_pretty(new_list)
+
+
+# What did you learn about pseudocode from working on this challenge? I learned that pseudocode is like drafting a blueprint for your code. It helps plan things out ahead of time so that you make less mistakes, and helps you think your code out line by line.
+
+# What are the tradeoffs of using arrays and hashes for this challenge? I think that the main tradeoff is understanding that arrays are better for smaller pieces of data that are required to be in order whereas hashes are for larger data structures that do not need to be in any particular order.
+
+# What does a method return? A method returns the action that you have called for. A method is a code block that does a particular job and when you call it, it returns the result of the job that you assigned to it.
+
+# What kind of things can you pass into methods as arguments?
+# You can pass intergers, strings, booleans, arrays, & hashes.
+
+# How can you pass information between methods? You can pass information between methods by using variables and assigning values to them.
+
+# What concepts were solidified in this challenge, and what concepts are still confusing? The concepts are fairly straight-forward, the difficult thing for me is more of getting the syntax correct. I also have a harder time getting my pseducode from my head to the program itself. It's like drawing; I can picture things in my mind easily, but when putting it on paper, it bares almost little resemblence to my actual idea.
