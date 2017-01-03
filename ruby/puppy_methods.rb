@@ -27,13 +27,40 @@ end
 spot = Puppy.new
 
 
+
+ class Apple
+
+def initialize
+  puts "This is for the Apple product line."
+end
+
+
+def iphone (mobile)
+  iphone = mobile + 1
+  puts "I want to upgrade to model #{iphone} of the iphone."
+end
+
+
+def ipod(music)
+  music.times{puts"playlist"}
+end
+
+
+def macbook
+  puts "I am a computer."
+end
+
+
+#Add loop here
+
+loop { print Apple }
+
 #Driver Code
 
 # def speak(woof)
 #woof.times{puts" "}
 # end
 
-spot.speak(3)
 
 
 
@@ -51,8 +78,16 @@ spot.speak(3)
 
 #Driver Code / Method calls
 
-#change
+spot = Puppy.new
 
-#spot.speak(5)
-#spot.roll_over
-#spot.dog_years(6)
+spot.speak(5)
+spot.roll_over
+spot.dog_years(6)
+
+
+
+product = Apple.new
+
+product.ipod(12)
+product.macbook
+product.iphone(8)
