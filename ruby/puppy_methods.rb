@@ -42,7 +42,7 @@ end
 
 
 def ipod(music)
-  music.times{puts"playlist"}
+  music.times{puts "playlist"}
 end
 
 
@@ -53,8 +53,9 @@ end
 
 #Add loop here
 
-loop { print Apple }
+#loop { print Apple }
 
+end
 #Driver Code
 
 # def speak(woof)
@@ -91,3 +92,14 @@ product = Apple.new
 product.ipod(12)
 product.macbook
 product.iphone(8)
+
+product_array = []
+
+50.times{product_array << Apple.new}
+
+product_array.each do |x|
+  x.ipod
+  x.macbook
+  x.iphone
+
+end
