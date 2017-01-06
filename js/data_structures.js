@@ -10,3 +10,14 @@ for (i = 0; i < names.length; i++){
 }
 
 console.log(horses)
+
+
+function Cars(make, model, year) {
+  console.log("Our new car:", this);
+  this.make = make;
+  this.model = model;
+  this.year = year;
+}
+
+var anotherCar = new Cars("Honda", "Civic", 2014);
+console.log("You have a " + anotherCar.model + " made by " +anotherCar.make + "in " + anotherCar.year);
