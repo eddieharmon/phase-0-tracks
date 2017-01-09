@@ -85,3 +85,7 @@ alaska.virus_effects
 
 #=======================================================================
 # Reflection Section
+
+# require_relative is what links the files together so that the data file and the solution file "communicate" with one another. I think I solidified the concept of hashes within a hash a little bit better. I still need major work when it comes to the hashes having multiple key-value pairs when they are nested inside one another though.
+
+# require_relative complements the built-in method require by allowing you to load a file that is relative to the file containing the require_relative statement. When you use require to load a file, you are usually accessing functionality that has been properly installed, and made accessible, in your system. require does not offer a good solution for loading files within the project’s code.
