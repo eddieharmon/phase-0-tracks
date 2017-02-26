@@ -18,11 +18,11 @@ garlic_bread = gets.chomp
 puts "Would you like to enroll in the company’s health insurance (y/n)?"
 insurance = gets.chomp
 
-if age && garlic_bread && insurance == true
+if (garlic_bread == y && insurance == y) == true
   puts "Probably not a vampire"
-elsif age && garlic_bread && insurance == false
+elsif garlic_bread || insurance == true
   puts "Probably a vampire"
-elsif age && garlic_bread && insurance == false
+elsif garlic_bread && insurance == false
   puts "Almost certainly a vampire"
 elsif name == "Drake Cula" || "Tu Fang"
   puts "Definitely a vampire"
