@@ -2,12 +2,12 @@ puts "How many employees will be processed?"
 no_of_employees = gets.chomp.to_i
 
 
-employees_remaining = no_of_employees - 1
+employees_remaining = no_of_employees
 
 until employees_remaining == 0
-  puts "Employees remaining: #{employees_remaining}"
   puts "What is your name?"
-name = gets.chomp
+  name = gets.chomp
+  puts "Employees remaining: #{employees_remaining - 1}"
 
 puts "How old are you? What year were you born?"
 age = gets.chomp
