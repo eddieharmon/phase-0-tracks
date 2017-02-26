@@ -1,5 +1,5 @@
 puts "What is the hamster's name?"
-hamster_name = gets.chomp
+hamster_name = gets.chomp.capitalize
 
 puts "What is the hamster's fur color?"
 hamster_color = gets.chomp
