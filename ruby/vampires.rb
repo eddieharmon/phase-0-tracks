@@ -1,3 +1,5 @@
+current_year = 2017
+
 puts "How many employees will be processed?"
 no_of_employees = gets.chomp.to_i
 
@@ -9,8 +11,18 @@ until employees_remaining == 0
   name = gets.chomp
   puts "Employees remaining: #{employees_remaining - 1}"
 
-puts "How old are you? What year were you born?"
-age = gets.chomp
+puts "How old will you be this year?"
+age_given = gets.chomp.to_i
+puts "What year were you born?"
+year_of_birth = gets.chomp.to_i
+
+age_calculation = current_year - year_of_birth
+
+if age_given == age_calculation
+  puts "You're telling the truth!"
+else
+  puts "You're a liar!"
+end
 
 puts "Our company cafeteria serves garlic bread. Should we order some for you? (y/n)"
 garlic_bread = gets.chomp
