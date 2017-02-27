@@ -59,10 +59,12 @@ decrypt("edward")
 # end
 
 
-# # Driver Code
+# Driver Code
+
+# decrypt(encrypt("swordfish"))
+
 # puts "Would you like to encrypt or decrypt a password?"
 # response = gets.chomp
-
 # puts "What is the password?"
 # password = gets.chomp
 
