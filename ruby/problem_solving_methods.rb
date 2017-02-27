@@ -7,7 +7,7 @@ def search_array(array, numbers)
   index= 0
   answer = nil;
 
-  while index < array.length && answer==nil
+  while index < array.length && answer == nil
     if array[index] == numbers
       #return index
       answer = index
