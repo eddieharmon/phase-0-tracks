@@ -24,7 +24,19 @@ encrypt("mississippi")
 
 # add_num(11,22)
 
+# The code works, but I haven't figure out how to iterate past the last letter in the string. I thought using a range would do the trick, but when I use a range it prints an empty string. One reason I think this is, is because Ruby is confused that I began with a negative index and ended with a positive 0. How can I determine what the highest negative number in the string will be if it is an unknown variable/parameter?
+def decrypt(str)
+  p str
+  p "The word #{str} has #{str.length} letters in it."
+  p "The letter at index -1 is #{str[-1]}"
+  index = 0
+while index < str.length
+p str[-1..0]
+index += 1
+end
+end
 
+decrypt("edward")
 
 
 
