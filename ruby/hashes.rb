@@ -50,3 +50,38 @@ runs.each do |name, age, children, decor|
 
 
 =end
+
+# ----------------5.2 "Do the thing" Practice-------------------
+
+# how_old = "age"
+
+# applicants = {
+#   name: "Edward",
+#   age: "30",
+#   gender: "male",
+#   ethnicity: "African-American"
+# }
+# # print only a value from the hash
+# p applicants [:name]
+# # Make a change to one of the values
+# applicants[:name] = "Randolph"
+# # Add a new key/value pair to the hash
+# applicants[:hired] = "yes"
+# # print the hash itself
+# p applicants
+# # print only the keys of the hash
+# p applicants.keys
+# # print only the values of the hash
+# p applicants.values
+
+# # It does not seem that I can store a key into a variable and try to access it in the hash later...
+# p applicants[how_old]
+
+# # You can add keys from a hash. They will be put together like adding strings...I can'd do this with the values tho...
+# p applicants[:name] + applicants[:gender]
+
+# #The change I made above by adding two keys does not seem to affect the hash when I print it.
+# p applicants
+
+# #It does not seem like I can print only the key of a hash by trying to access the value...
+# #p applicants["Edward"]
