@@ -51,5 +51,34 @@ jordan_jerseys.delete_if do |number|
   end
 end
 
+# ---------------------More Practice----------------------------------
+
+# Using the .each and .map methods on a hash (.map! cant be used on hashes)...
+
+hollywood_actors = {
+  "Denzel Washington": "Malcolm X",
+  "Will Smith": "Chris Gardner",
+  "Morgan Freeman": "Nelson Mandella",
+}
+
+hollywood_actors.each {|actor, role| puts "Here are some of my favorite actors and the roles they played of real-life people: #{actor} played #{role}."}
+
+p hollywood_actors
 
 
+# Using the .each and .map! methods on an array...
+
+hollywood_actresses = ["Viola Davis", "Angela Bassett", "Lynn Whitfield"]
+
+hollywood_actresses.each { |actress| puts "Here are a few of my favorite actresses: #{actress}"}
+
+puts "Original data:"
+p hollywood_actresses
+
+p "Here are my favorite actresses with their names in all caps!"
+hollywood_actresses.map! {|actresses|
+  actresses.upcase
+}
+
+puts "After .map! call..."
+p hollywood_actresses
