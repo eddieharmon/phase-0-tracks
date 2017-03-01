@@ -1,28 +1,70 @@
-puts "What is your client's name?"
-name: = gets.chomp
-puts "How old is your client?"
-age: = gets.chomp.to_i
-puts "How many children does your client have?"
-children: = gets.chomp.to_i
-puts "What decor theme does your client prefer?"
+design_applicants = {}
+
+puts "What is your name?"
+name = gets.chomp
+
+puts "What is your age?"
+age = gets.chomp.to_i
+
+puts "How many children do you have?"
+children = gets.chomp.to_i
+
+puts "What is your favorite decor theme?"
 decor = gets.chomp
-puts "Does your client like paintings on their walls? (y/n)"
-paintings: == y = true
-paintings: == n = false
 
-interior_design = {
-  name: "gets.chomp",
-  age: "gets.chomp",
-  children: "gets.chomp",
-  decor: "gets.chomp",
-  paintings: "gets.chomp",
-}
+puts "Would you like to make any changes to one of your answers? If not, type 'none'. If so, which category?"
+change = gets.chomp
+if change == "name"
+  puts "What is your corrected name?"
+  name = gets.chomp
+elsif change == "age"
+  puts "What is your correct age?"
+  age = gets.chomp.to_i
+elsif change == "children"
+  puts "What is the correct number of children that you have?"
+  children = gets.chomp.to_i
+elsif change == decor
+  #Why is my code breaking here? It won't re-record input for decor
+  puts "What is the corrected decor of your choice?"
+  decor = gets.chomp
+elsif change == "none"
+  puts "Okay, here is the info you provided:"
+else
+  puts "Thank you for applying!"
+end
+design_applicants[:name] = "#{name}"
+design_applicants[:age] = "#{age}"
+design_applicants[:children] = "#{children}"
+design_applicants[:decor] = "#{decor}"
 
-p interior_design[:name]
-p interior_design[:age]
-p interior_design[:children]
-p interior_design[:decor]
-p interior_design[:paintings]
+p design_applicants
+# ---------------------------------Another way of doing this, but not as good as above, I believe -------------------------
+
+# puts "What is your client's name?"
+# name: = gets.chomp
+# puts "How old is your client?"
+# age: = gets.chomp.to_i
+# puts "How many children does your client have?"
+# children: = gets.chomp.to_i
+# puts "What decor theme does your client prefer?"
+# decor = gets.chomp
+# puts "Does your client like paintings on their walls? (y/n)"
+# paintings: == y = true
+# paintings: == n = false
+
+# interior_design = {
+#   name: "gets.chomp",
+#   age: "gets.chomp",
+#   children: "gets.chomp",
+#   decor: "gets.chomp",
+#   paintings: "gets.chomp",
+# }
+
+# p interior_design[:name]
+# p interior_design[:age]
+# p interior_design[:children]
+# p interior_design[:decor]
+# p interior_design[:paintings]
 
 #or simply p interior_design
 
