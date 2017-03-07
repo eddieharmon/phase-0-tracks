@@ -9,6 +9,9 @@ The desired floor has a corresponding number to match.
 Floor numbers are usually arranged from highest number to lowest number, top to bottom.
 There may be exceptions, such as “P” for “Penthouse”, or “L” for "Lobby", etc.
 The robot should understand the different integers and even and odd numbers.
+  If robot's current floor number != to destination floor, then robot should add the number of floors needed to = the number desired, if going up (Ex: Currently on floor #5, destination is floor #8, robot computes destination floor (8) - current floor (5) and arrives at 3. This number is then added to current floor to have the robot push the corresponding button (8)
+  In the same way, if the destination is lower than the current floor, in the end the robot will subtract. (Ex: Currently on floor #12, destination is floor #6, robot computes current floor (12) - destination floor (6) to and arrives at the computation of 6. Robot then subtracts 6 from 12 because the direction is now going down) to arrive at destination floor).
+  Robot follows logic: if current floor < destination floor the difference will be added (going up). Inversely if current floor > destination floor the difference will be subtracted (going down)
 Once the robot identifies the button matching its provided destination, it should push it.
 The button will likely illuminate (either brighter or a different color).
 The illumination signifies that the elevator has recognized the command to go there.
