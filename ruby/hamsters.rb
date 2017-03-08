@@ -5,11 +5,13 @@ puts "What is the hamster's fur color?"
 hamster_color = gets.chomp
 
 puts "What is the estimated age of the hamster?"
-hamster_age = gets.chomp.to_i
-hamster_age == nil
+hamster_age = gets.chomp
+if hamster_age == ""
+  age = nil
+end
 
 puts "Is the hamster a good candidate for adoption? (y/n)"
-adoptable = gets.chomp.to_s
+adoptable = gets.chomp
 
 if adoptable == "y"
   puts "That's great news!"
@@ -17,9 +19,10 @@ if adoptable == "y"
 elsif adoptable == "n"
   adoptable = "unable"
   puts "Awwww, so sad to hear..."
-else
-  puts "I don't know what you mean."
+# else
+#   puts "I don't know what you mean."
 end
+# I could use line 24 as a means to loop through the question again if the user gave an unrecognizable response, but not for this challenge...This is assuming no user error.
 #y = "more than ready"
 #n = "unable"
 
