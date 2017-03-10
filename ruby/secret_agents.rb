@@ -1,3 +1,45 @@
+# Write method that advances every letter in a string forward. If a space is encountered, do not advance forward.
+
+#counter = 0
+
+def encrypt(x)
+  counter = 0
+  word_length = x.length
+  while counter < word_length
+    jnjkjkjjj x[counter]
+    counter +=1
+end
+
+encrypt("abc")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #This string variable is just being used to test while loop before the method was created.
 #string = "abcdefghijklmnopqrstuvwxyz"
 
@@ -7,7 +49,7 @@ def encrypt(str)
   puts str
   index = 0
 while index < str.length
-p str[index].next
+print str[index].next.sub("!", " ") #Learned that p did not work as well as print. Aslo used sub method to take out the space.
 index += 1
 end
 end
