@@ -1,3 +1,26 @@
-body {
-    background-color: powderblue;
+.column-1 {
+  float: left;
+  width: 48%;
+  background-color: blue;
+  padding: 5px;
+  font-family: Arial;
+}
+ul {
+list-style-type: square;
+}
+
+.column-1 ul li {
+  list-style-type: square;
+}
+
+.column-2 {
+  float: right;
+  width: 48%;
+   background-color: red;
+   padding: 5px;
+   font-family: Arial;
+}
+
+footer {
+  clear: both;
 }
