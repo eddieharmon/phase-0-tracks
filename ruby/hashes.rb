@@ -1,16 +1,30 @@
-design_applicants = {}
+design_applicants = {
+  name: "",
+  age: "",
+  children: "",
+  decor: "",
+  services: ""
+}
 
-puts "What is your name?"
+puts "What is your client's name?"
 name = gets.chomp
 
-puts "What is your age?"
+puts "What is your client's age?"
 age = gets.chomp.to_i
 
-puts "How many children do you have?"
+puts "How many children does your client have?"
 children = gets.chomp.to_i
 
-puts "What is your favorite decor theme?"
+puts "What decor theme does your client prefer?"
 decor = gets.chomp
+
+puts "Has your client utilized interior design services before? (y/n)"
+services = gets.chomp
+if services == "y"
+services = true
+else
+services = false
+end
 
 puts "Would you like to make any changes to one of your answers? If not, type 'none'. If so, which category?"
 change = gets.chomp
@@ -23,22 +37,47 @@ elsif change == "age"
 elsif change == "children"
   puts "What is the correct number of children that you have?"
   children = gets.chomp.to_i
-elsif change == decor
-  #Why is my code breaking here? It won't re-record input for decor
+elsif change == "decor"
   puts "What is the corrected decor of your choice?"
   decor = gets.chomp
-elsif change == "none"
+elsif  change == "services"
+  puts "Has your client utilized interior design services before? (y/n)"
+  services = gets.chomp #Had to repeat logic this to work
+  if services == "y"
+  services = true
   puts "Okay, here is the info you provided:"
-else
-  puts "Thank you for applying!"
+  puts ""
+  else
+  services = false
+  puts "Okay, here is the info you provided:"
+  puts ""
+  end
+
+else change == "none"
+  puts "Okay, here is the info you provided:"
+  puts ""
 end
-design_applicants[:name] = "#{name}"
-design_applicants[:age] = "#{age}"
-design_applicants[:children] = "#{children}"
-design_applicants[:decor] = "#{decor}"
+design_applicants[:name] = name
+design_applicants[:age] = age
+design_applicants[:children] = children
+design_applicants[:decor] = decor
+design_applicants[:services] = services
 
 p design_applicants
-# ---------------------------------Another way of doing this, but not as good as above, I believe -------------------------
+puts ""
+puts "Thank you for applying!"
+
+# I can use .to_sym to turn strings into symbols
+
+# I also could have written the hash like:
+# design_applicants = {
+#   name: "",
+#   age: "",
+#   children: "",
+#   decor: ""
+# }
+
+# -----------------------------Another way of doing this, but not as good as above, I believe -------------------------
 
 # puts "What is your client's name?"
 # name: = gets.chomp
