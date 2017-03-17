@@ -1,59 +1,57 @@
 # Iterate through an array of teams and then change the data in place with .map! by reversing the order.
 
-# teams = ["Lakers", "Clippers", "Warriors", "Kings"]
+teams = ["Lakers", "Clippers", "Warriors", "Kings"]
 
-# puts "California NBA teams:"
-# p teams
+puts "California NBA teams:"
+p teams
 
-# teams.map! do |team|
-#   puts team #Remove the s
-#   puts ""
-#   teams.reverse
-# end
+teams.map! do |team|
+  puts team #Remove the s
+  puts ""
+  teams.reverse
+end
 
-# puts "After .each call:"
-# puts ""
-# p teams
+puts "After .each call:"
+puts ""
+p teams
 
 
 #To do the .each call specifically...
-# teams.each do |team|
-#   puts "Here is an NBA team in California: #{team}"
-# end
+teams.each do |team|
+  puts "Here is an NBA team in California: #{team}"
+end
 
+# Iterate through a hash without using symbols
+franchise_players = {
+  "Kobe" => "Lakers",
+  "cp3" => "Clippers",
+  "Steph" => "Warriors",
+  "Boogie" => "Pelcans",
+}
 
-# franchise_players = {
-#   "kobe" => "lakers",
-#   "cp3" => "clippers",
-#   "steph" => "warriors",
-#   "boogie" => "kings",
-# }
-
-# franchise_players.each do |player, team|
-#   puts "#{player} is known for playing on the #{team}."
-# end
+franchise_players.each do |player, team|
+  puts "#{player} is known for playing on the #{team}."
+end
 
 
 #Write a method that takes a code block that also has parameters
-# def reminder
-#   puts "Remember to be kind to yourself!"
-#   yield("persistence", "prayer")
-# end
+def reminder
+  puts "Remember to be kind to yourself!"
+  yield("persistence", "prayer")
+end
 
-# reminder { |quality1, quality2|puts "Programming takes practice & patience & #{quality1} & #{quality2}!"}
+reminder { |quality1, quality2|puts "Programming takes practice & patience & #{quality1} & #{quality2}!"}
 
 
+# A method that iterates through the items, deleting any that meet a certain condition (for example, deleting any numbers that are less than 5)
+jordan_jerseys = [23, 45, 9]
+  puts "Numbers worn throughout Michael Jordan's career:"
+  puts jordan_jerseys
+  puts ""
 
-# #knuckleheads = ["moe", "larry", "curly"]
-
-# jordan_jerseys = [23, 45, 9]
-#   puts "Numbers worn throughout Michael Jordan's career:"
-#   puts jordan_jerseys
-#   puts ""
-
-# jordan_jerseys.delete_if { |number| number >= 22}
-# puts "This is his Olympic number:"
-# p jordan_jerseys
+jordan_jerseys.delete_if { |number| number >= 22}
+puts "This is his Olympic number:"
+p jordan_jerseys
 
 
 # A method that filters a data structure for only items that do satisfy a certain condition (for example, keeping any numbers that are less than 5).
@@ -97,27 +95,27 @@ hollywood_actors.each {|actor, role| puts "#{actor} played #{role}."}
 puts ""
 p hollywood_actors
 
-
- p "Here are my favorite actors with their names in all caps!"
- hollywood_actors.map {|actor,roles| roles.upcase}
- p hollywood_actors
+#How do I change all of the keys or values in a hash?
+ # p "Here are my favorite actors with their names in all caps!"
+ # hollywood_actors.map {|actor,roles| roles.upcase}
+ # p hollywood_actors
 
 # Using the .each and .map! methods on an array...
 
-# hollywood_actresses = ["Viola Davis", "Angela Bassett", "Lynn Whitfield"]
+hollywood_actresses = ["Viola Davis", "Angela Bassett", "Lynn Whitfield"]
 
-# hollywood_actresses.each { |actress| puts "One of my favorite actresses is: #{actress}"}
+hollywood_actresses.each { |actress| puts "One of my favorite actresses is: #{actress}"}
 
-# puts ""
-# puts "Original data:"
-# p hollywood_actresses
-# puts ""
+puts ""
+puts "Original data:"
+p hollywood_actresses
+puts ""
 
-# p "Here are my favorite actresses with their names in all caps!"
-# hollywood_actresses.map! {|actresses|
-#   actresses.upcase
-# }
+p "Here are my favorite actresses with their names in all caps!"
+hollywood_actresses.map! {|actresses|
+  actresses.upcase
+}
 
-# puts "After .map! call..."
-# puts ""
-# p hollywood_actresses
+puts "After .map! call..."
+puts ""
+p hollywood_actresses
