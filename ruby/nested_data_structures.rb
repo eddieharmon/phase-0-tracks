@@ -39,9 +39,33 @@ p highway [:honda][:music]
 p highway [:toyota][:passengers]
 p highway [:nissan][:music][1]
 
+#Additional practice using a sports league that holds teams which holds players:
+
+nba = {
+  Boston_Celtics: ["Isaiah Thomas", "Jaylen Brown"],
+  Brooklyn_Nets: ["Jeremy Lin", "Isaiah Whitehead"],
+  New_York_Knicks: ["Carmelo Anthony", "Derrick Rose", "Kristaps Porzingis"],
+  Philadelphia_76ers: ["Joel Embiid", "Ben Simmons"],
+  Toronto_Raptors: ["Kyle Lowry", "Demar Derozan"],
+  Chicago_Bulls: ["Dwyane Wade", "Jimmy Butler"],
+  Cleveland_Cavaliers: ["Lebron James", "Kyrie Irving", "Kevin Love", "Iman Shumpert", "J.R. Smith", "Derrick Williams", "Deron Williams", "Kyle Korver", "James Jones", "Richard Jefferson", "Tristan Thompson"],
+  Golden_State_Warriors: ["Steph Curry", "Klay Thompson", "Draymond Green", "Kevin Durant", "Zaza Pachullia", "Andre Iguadola", "Matt Barnes" ]
+}
 
 
+#p nba.keys #printing all the hash's keys
+#p nba.values #printing all the hashes values
+#p nba[:New_York_Knicks][2] #Only printing the last player listed in the array
+# nba[:Philadelphia_76ers].push "Jahlil Okafor" #Adding a player to the array
+# p nba[:Philadelphia_76ers] #Checking to ensure value was added to the array
+# nba[:Golden_State_Warriors][-1] = "Ian Clark" #Replacing a player using negative indexing
+# p nba[:Golden_State_Warriors]
+#Trying to nest an additional data structure inside a nested data structure (Boston Celtics). What if I wanted each player's points per game average to be included? This would need to be an array because this data needs to be ordered so that it corresponds with the correct player.
 
+# puts "This is the leading scorer of the Celtics and his ppg average:"
+# p nba[:Boston_Celtics][0][0] #Why doesn't this work? Code I removed was [["Isaiah Thomas", "Jaylen Brown"], [29.8, 12.3]]
+
+#Example syntax from the tutorial video:
 =begin
 house = {
   "kitchen" => ["table", "refrigerator"],
