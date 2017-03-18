@@ -16,3 +16,13 @@ alias_creator("Felicia Torres")
 # 2) Changing all of the vowels (a, e, i, o, or u) to the next vowel in 'aeiou', and all of the consonants (everything else besides the vowels) to the next consonant in the alphabet. So 'a' would become 'e', 'u' would become 'a', and 'd' would become 'f'.
 
 # This sounds like I will need to iterate through each letter, and then use some sort of method to determine if it meets a certain criteria like we did in a previous assignment. This sounds like a code block will be needed.
+
+
+# ------------Release 1: Provide A User Interface----------------
+
+puts "Give us a name so we can give you a fake name back. Type 'quit' when done (or just press 'enter')"
+name = gets.chomp
+if name == "quit" || ""
+  puts "Okay, here's your fake name:"
+  p name
+end
