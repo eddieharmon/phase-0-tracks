@@ -1,4 +1,3 @@
-=begin
 highway = {
   toyota: {
     model: "Camry",
@@ -39,7 +38,7 @@ p highway
 p highway [:honda][:music]
 p highway [:toyota][:passengers]
 p highway [:nissan][:music][1]
-=end
+
 #Additional practice using a sports league that holds teams which holds players:
 
 nba = {
@@ -53,18 +52,19 @@ nba = {
   Golden_State_Warriors: ["Steph Curry", "Klay Thompson", "Draymond Green", "Kevin Durant", "Zaza Pachullia", "Andre Iguadola", "Matt Barnes" ]
 }
 
+# Driver Code
+p nba.keys #printing all the hash's keys
+p nba.values #printing all the hashes values
+p nba[:New_York_Knicks][2] #Only printing the last player listed in the array
+nba[:Philadelphia_76ers].push "Jahlil Okafor" #Adding a player to the array
+p nba[:Philadelphia_76ers] #Checking to ensure value was added to the array
+nba[:Golden_State_Warriors][-1] = "Ian Clark" #Replacing a player using negative indexing
+p nba[:Golden_State_Warriors] #To confirm the player above added
 
-#p nba.keys #printing all the hash's keys
-#p nba.values #printing all the hashes values
-#p nba[:New_York_Knicks][2] #Only printing the last player listed in the array
-# nba[:Philadelphia_76ers].push "Jahlil Okafor" #Adding a player to the array
-# p nba[:Philadelphia_76ers] #Checking to ensure value was added to the array
-# nba[:Golden_State_Warriors][-1] = "Ian Clark" #Replacing a player using negative indexing
-# p nba[:Golden_State_Warriors]
 #Trying to nest an additional data structure inside a nested data structure (Boston Celtics). What if I wanted each player's points per game average to be included? This would need to be an array because this data needs to be ordered so that it corresponds with the correct player.
 
-# puts "This is the leading scorer of the Celtics and his ppg average:"
-p nba[:Boston_Celtics][0][0], nba[:Boston_Celtics][1][0] #Why do they print on seperate lines? These print on seperate lines because of the comma. p treats the comma as needing to print something different.
+puts "This is the leading scorer of the Celtics and his ppg average:"
+p nba[:Boston_Celtics][0][0], nba[:Boston_Celtics][1][0] #Why do they print on seperate lines? These print on seperate lines because of the comma. p treats the comma as needing to print something different. I could usilize a string and then concatenate to add them, or store the results in a variable and print the variable instead.
 
 #Using interpolation for readability to achieve the same thing as above.
 puts "#{nba[:Boston_Celtics][0][0]} is the leading scorer of the Celtics and averages #{nba[:Boston_Celtics][1][0]} points per game."
