@@ -25,4 +25,27 @@ name = gets.chomp
 if name == "quit" || ""
   puts "Okay, here's your fake name:"
   p name
+else
+  puts "Provide a name:"
+  name = gets.chomp
 end
+
+
+
+# ------------Release 2: Store The Aliases-----------------------
+
+real_names = [] #Empty array user input will be shoveled into
+name = 0 #Set a condition at the beginning for the while loop
+puts "Give us a name so we can provide you a fake name back. Type 'quit' when done (or just press 'enter')."
+name = gets.chomp
+real_names << name #Shovels the 1st response into array
+until ["quit", ""].include? name do
+  puts "Give me another name:"
+  name = gets.chomp
+  real_names << name #Shovels the looped responses into array
+end
+
+real_names.slice!(1-) #Deletes last item no mater if quit is typed or enter is pressed. The next two lines also work, but this line accomplishes both in single line of code.
+# real_names.delete("quit") #Deletes this typed word from appearing
+# real_names.delete("") #Deletes empty quote from appearing
+p real_names
