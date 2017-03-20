@@ -1,3 +1,5 @@
+#-------------Release 0: Attempt a Tricky Algorithm--------------
+
 # pseudocode and write a method that takes a spy's real name (e.g., "Felicia Torres") and creates a fake name with it by doing the following:
 
 # 1) Swapping the first and last name.
@@ -49,3 +51,6 @@ real_names.slice!(1-) #Deletes last item no mater if quit is typed or enter is p
 # real_names.delete("quit") #Deletes this typed word from appearing
 # real_names.delete("") #Deletes empty quote from appearing
 p real_names
+
+# Iterate through each person in the real name array
+real_names.each { |person| puts "#{person} is also known as:"}
