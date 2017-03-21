@@ -22,9 +22,37 @@ class Puppy
 
 end
 
+Puppy.new
 
 
+duchess = Puppy.new
+fido = Puppy.new
+spot = Puppy.new
 
+
+# Driver Code
+
+# spot.fetch("ball")
+# fido.fetch("stick")
+# duchess.fetch("frisbee")
+
+# spot.speak(3)
+# fido.speak(2)
+# duchess.speak(5)
+
+# spot.roll_over
+# fido.roll_over
+# duchess.roll_over
+
+#How can I distinguish which instance of my method call is being run?
+# spot.dog_years(3)
+# fido.dog_years(2)
+# duchess.dog_years(5)
+
+
+# spot.play_dead
+# fido.play_dead
+# duchess.play_dead
 
 
 
