@@ -1,14 +1,14 @@
-# SPECIES ------------------------
+# SPECIES ------------------------(aka Class)
 # Puppies
 
-# CHARACTERISTICS ----------------
+# CHARACTERISTICS ----------------(aka attributes)
 # Furry
 # Friendly: yes
 # Eye count: 2
 # Name: varies
 # Color: varies
 
-# BEHAVIOR -----------------------
+# BEHAVIOR -----------------------(aka methods)
 # Barks
 # Wags Tail
 # Fetches
