@@ -8,6 +8,22 @@ class Puppy
     x.times { puts "Woof!"}
   end
 
+  def roll_over
+    puts "*rolls over*"
+  end
+
+  def dog_years(x)
+    puts x * 7
+  end
+
+  def play_dead
+    puts "*plays dead*"
+  end
+
+end
+
+
+
 
 
 
