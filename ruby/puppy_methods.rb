@@ -67,6 +67,16 @@ def initialize
   puts "Initializing new Apple instance..."
 end
 
+def iphone
+end
+
+def ipod
+end
+
+def imac
+end
+
+
 end
 
 
