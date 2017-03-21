@@ -20,7 +20,7 @@ class Puppy
     puts "*plays dead*"
   end
 
-  def initialize
+  def initialeze
     puts "Initializing new puppy instance..."
   end
 
@@ -58,6 +58,16 @@ spot.play_dead
 fido.play_dead
 duchess.play_dead
 
+
+# Release 2: Implement my own class below the Puppy class
+
+class Apple
+
+def initialize
+  puts "Initializing new Apple instance..."
+end
+
+end
 
 
 
