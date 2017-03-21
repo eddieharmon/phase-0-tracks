@@ -1,61 +1,93 @@
 class Puppy
 
-def fetch(toy)
-  puts "I brought back the #{toy}!"
-  toy
-end
+  def fetch(toy)
+    puts "I have just fetched a #{toy}!"
+  end
 
-
-def speak(woof)
-  woof.times{puts"woof"}
-end
-
-
-def roll_over
-  puts "roll over"
-end
-
-
-def dog_years (human_age)
-  dog_years = human_age * 7
-  puts "My dog is #{dog_years} years old!"
-end
-
-
-end
-
-spot = Puppy.new
+  def speak(x)
+    x.times { puts "Woof!"}
+  end
 
 
 
- class Apple
-
-def initialize
-  puts "This is for the Apple product line."
-end
 
 
-def iphone (mobile)
-  iphone = mobile + 1
-  puts "I want to upgrade to model #{iphone} of the iphone."
-end
 
 
-def ipod(music)
-  music.times{puts "playlist"}
-end
 
 
-def macbook
-  puts "I am a computer."
-end
+
+
+
+
+
+
+
+
+
+
+
+
+
+#---------------------------------------------------------------
+# class Puppy
+
+# def fetch(toy)
+#   puts "I brought back the #{toy}!"
+#   toy
+# end
+
+
+# def speak(woof)
+#   woof.times{puts"woof"}
+# end
+
+
+# def roll_over
+#   puts "roll over"
+# end
+
+
+# def dog_years (human_age)
+#   dog_years = human_age * 7
+#   puts "My dog is #{dog_years} years old!"
+# end
+
+
+# end
+
+# spot = Puppy.new
+
+
+
+#  class Apple
+
+# def initialize
+#   puts "This is for the Apple product line."
+# end
+
+
+# def iphone (mobile)
+#   iphone = mobile + 1
+#   puts "I want to upgrade to model #{iphone} of the iphone."
+# end
+
+
+# def ipod(music)
+#   music.times{puts "playlist"}
+# end
+
+
+# def macbook
+#   puts "I am a computer."
+# end
 
 
 #Add loop here
 
 #loop { print Apple }
 
-end
+#end
 #Driver Code
 
 # def speak(woof)
@@ -79,27 +111,27 @@ end
 
 #Driver Code / Method calls
 
-spot = Puppy.new
+# spot = Puppy.new
 
-spot.speak(5)
-spot.roll_over
-spot.dog_years(6)
+# spot.speak(5)
+# spot.roll_over
+# spot.dog_years(6)
 
 
 
-product = Apple.new
+# product = Apple.new
 
-product.ipod(12)
-product.macbook
-product.iphone(8)
+# product.ipod(12)
+# product.macbook
+# product.iphone(8)
 
-product_array = []
+# product_array = []
 
-50.times{product_array << Apple.new}
+# 50.times{product_array << Apple.new}
 
-product_array.each do |x|
-  x.ipod
-  x.macbook
-  x.iphone
+# product_array.each do |x|
+#   x.ipod
+#   x.macbook
+#   x.iphone
 
-end
+# end
