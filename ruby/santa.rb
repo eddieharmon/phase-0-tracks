@@ -1,21 +1,23 @@
 class Santa
 
-def speak
-  puts "Ho, ho, ho! Haaaappy holidays!"
+  def speak
+    puts "Ho, ho, ho! Haaaappy holidays!"
+  end
+
+  def eat_milk_and_cookies(cookie)
+    puts "That was a good #{cookie}!"
+  end
+
+  def initialize
+    puts "Initializing Santa instance..."
+  end
+
 end
 
-def eat_milk_and_cookies(cookie)
-puts "That was a good #{cookie}!"
-end
+santa = Santa.new #This is what is meant by "Add a bit of code below your class declaration to check that you're able to initialize a Santa instance and call its methods." This is what adds an instance soo that the method calls can run.
 
-def initialize
-  puts "Initializing Santa instance..."
-end
-
-end
-
-
-
+santa.speak
+santa.eat_milk_and_cookies("Samoa")
 
 
 
