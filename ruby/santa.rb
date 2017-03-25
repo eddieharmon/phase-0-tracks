@@ -102,9 +102,28 @@
 
 # Write a program that creates lots of Santas.
 
-class Santa
+class Santa # Declares the Santa class
+
+  def initialize # Initializer
+    puts "Initializing Santa instance..."
+  end
+
+
 end
 
+# Make a loop to create lots of santas
+100.times do
+  santa = Santa.new
+end
+
+
+santas = []
+example_genders = ["agender", "female", "bigender", "male", "female", "gender fluid", "N/A", "Thundercat", "Silverhawk", "Transformer", "Care Bear", "GI Joe", "Ninja Turtle", "Toxic Crusader"]
+example_ethnicities = ["black", "Latino", "white", "Japanese-African", "prefer not to say", "Mystical Creature (unicorn)", "N/A", "Italian", "Senegalese", "Jamaican", "Peruvian", "Trinidadian", "Haitian", "Polynesian"]
+
+
+p example_genders.sample
+p example_ethnicities.sample
 
 
 
