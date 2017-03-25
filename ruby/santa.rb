@@ -103,14 +103,28 @@
 # Write a program that creates lots of Santas.
 
 class Santa # Declares the Santa class
+  attr_reader :gender, :ethnicity, :age
+  #attr_accessor doesn't seem required because nothing is being edited for this program, but all my instance variable need to be seen.
 
   def initialize(gender, ethnicity) # Initializer
     puts "Initializing Santa instance..."
+    @age = rand(0..140)
+    @gender = gender
+    @ethnicity = ethnicity
+  end
+
+
+  def show_me_the_santa
+    puts "This santa is: #{age},"
+    puts "and identifies as a(n) #{ethnicity}"
+    puts "#{gender}."
   end
 
 
 end
 
+
+# Use our array of example genders and an array of example ethnicities (and feel free to add to it if you like -- each array could have a lot more options in it!) to create your Santas with a randomly selected gender and a randomly selected ethnicity.
 
 santas = []
 example_genders = ["agender", "female", "bigender", "male", "female", "gender fluid", "N/A", "Thundercat", "Silverhawk", "Transformer", "Care Bear", "GI Joe", "Ninja Turtle", "Toxic Crusader"]
