@@ -1,4 +1,6 @@
 class Santa
+  attr_reader :age, :ethnicity
+  attr_accessor :gender
 
   def initialize(gender, ethnicity)
     puts "Initializing Santa instance..."
@@ -29,19 +31,10 @@ def get_mad_at(reindeer_name)
 end
 
 # Getter methods for age and ethnicity
-def age
-  @age
-end
 
-def ethnicity
-  @ethnicity
-end
 
 # The @gender attribute should have a setter method that allows @gender to be reassigned from outside the class definition.
 
-  def gender=(new_gender)
-    @gender = new_gender
-  end
 
 
   def about #This is so I can see info on my instances
@@ -95,7 +88,7 @@ santas << Santa.new("female", "Peruvian")
 
 santa.gender = "fabulous"
 santa.celebrate_birthday=(5)
-# puts "Happy birthday to Santa. He just turned #{age} years old!"
+ puts "Happy birthday to Santa. He just turned #{santa.age} years old!"
 santa.speak
 santa.eat_milk_and_cookies("Samoa")
 santa.about
