@@ -89,20 +89,15 @@ ipod = Apple.new
 imac = Apple.new
 
 # Driver code for Apple class
-
-# loop do 50.times
-#   class Apple
-#   end
-# end
-# 50.times {Apple.new}
-# instance_catcher = 50.times {Apple.new}
+stored_instances = []
+50.times {stored_instances << Apple.new}
+#instance_catcher = 50.times {Apple.new}
 # Modify your loop so that it stores all of the instances in a data structure.
 
-stored_instances = []
 #stored_instances << instance_catcher # I had something to "catch" the 50 new instances, but it isn't needed. Line 104
-50.times do
-stored_instances << Apple.new
-end
+# 50.times do
+# stored_instances << Apple.new
+# end
 puts "stored_instances"
 p stored_instances
 
@@ -114,10 +109,10 @@ item.music
 item.surf
 end
 
-# Method Calls
-# iphone.phone_call
-# ipod.music
-# imac.surf
+#Method Calls
+iphone.phone_call
+ipod.music
+imac.surf
 
 # This does not work...
 # def make_more_instances
@@ -138,21 +133,21 @@ end
 
 
 
-#---------------------------------------------------------------
-# class Puppy
+# #---------------------------------------------------------------
+# # class Puppy
 
-# def fetch(toy)
-#   puts "I brought back the #{toy}!"
-#   toy
-# end
-
-
-# def speak(woof)
-#   woof.times{puts"woof"}
-# end
+# # def fetch(toy)
+# #   puts "I brought back the #{toy}!"
+# #   toy
+# # end
 
 
-# def roll_over
+# # def speak(woof)
+# #   woof.times{puts"woof"}
+# # end
+
+
+# # def roll_over
 #   puts "roll over"
 # end
 
