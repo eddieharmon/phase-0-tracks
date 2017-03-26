@@ -83,25 +83,21 @@ end
 end
 
 Apple.new
-
+# 3 new instances of the apple class
 iphone = Apple.new
 ipod = Apple.new
 imac = Apple.new
 
-# Driver code for Apple class
+
+# Modify your loop so that it stores all of the instances in a data structure.
 stored_instances = []
 50.times {stored_instances << Apple.new}
-#instance_catcher = 50.times {Apple.new}
-# Modify your loop so that it stores all of the instances in a data structure.
 
-#stored_instances << instance_catcher # I had something to "catch" the 50 new instances, but it isn't needed. Line 104
-# 50.times do
-# stored_instances << Apple.new
-# end
-puts "stored_instances"
+puts ""
+puts "This is my stored instances array:"
+puts ""
 p stored_instances
-
-#method_calls = iphone.phone_call, ipod.music, imac.surf
+puts ""
 
 stored_instances.each do |item| #Don't call the original method calls, must use what's in the pipes then the method
 item.phone_call
@@ -109,10 +105,12 @@ item.music
 item.surf
 end
 
-#Method Calls
-iphone.phone_call
-ipod.music
-imac.surf
+#Method Calls (The calls above work for each individual instance.)
+# iphone.phone_call
+# ipod.music
+# imac.surf
+
+
 
 # This does not work...
 # def make_more_instances
