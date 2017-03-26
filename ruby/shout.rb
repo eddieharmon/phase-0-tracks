@@ -1,4 +1,17 @@
+module Shout
+  def scream(words)
+    puts "We want NBA tickets to be #{words}!"
+  end
+end
 
+
+class Fans
+  include Shout
+end
+
+class Protesters
+  include Shout
+end
 
 
 
