@@ -36,15 +36,15 @@ end
 
 
 
-# class TodoList
-# def initialize(list_items).split
-#   @list = list_items
-# end
+class TodoList
+def initialize(list_items).split
+  @list = list_items
+end
 
 
 
 
-# end
+end
 
 
-# list_items.("do the dishes", "mow the lawn")
+list_items.("do the dishes", "mow the lawn")
