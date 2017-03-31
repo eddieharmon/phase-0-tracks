@@ -1,31 +1,21 @@
-var colors = ["blue", "green", "red", "yellow"];
-var names = ["James", "Seabiscuit", "Flicka", "Shadowfox"];
+var horseColors = ["Black", "White", "Brown", "Orange"];
 
-colors.push("black");
-names.push("Felitz");
+var horseNames = ["Fred", "Jenny", "Bob", "Seabiscuit"];
 
-var horses = {};
-for (i = 0; i < names.length; i++){
-  horses[names[i]]=colors[i];
+horseColors.push("Grey");
+horseNames.push("Mr. Ed");
+
+console.log(horseColors);
+console.log(horseNames);
+
+horses = {};
+
+for (var i = 0; i < horseNames.length; i++) {
+  horses[horseNames[i]] = horseColors[i];
 }
 
-console.log(horses)
+console.log(horses);
 
 
-function Cars(make, model, year) {
-  this.make = make;
-  this.model = model;
-  this.year = year;
-  if (this.year <2013){
-    console.log("You have an old car.");
-  }
-  else {console.log("You have a new car.");}
-}
+//Car Constructor
 
-var anotherCar = new Cars("Honda", "Civic", 2014);
-console.log("You have a " + anotherCar.model + " made by " +anotherCar.make + "in " + anotherCar.year);
-var otherCar = new Cars("Toyota", "Prius", 2000);
-console.log("You have a " + otherCar.model + " made by " +otherCar.make + "in " + otherCar.year);
-
-otherCar.honk = function(){console.log("Honk Honk!")};
-otherCar.honk();
