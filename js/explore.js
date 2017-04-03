@@ -10,6 +10,16 @@ for (var i = word.length; i >= 0; i--) {
   console.log(word[i]);
 }
 
+// Make the ability to add whatever letters come out backwards to be added back together as one word on the same line. Something like:
+// console.log("H" + "e" + "l" + "l" + "o")
+
+// I tried to set the result of the loop equal to a variable, but that did not work. I tried:
+//backwardWord = for (var i = word.length; i >= 0; i--) {
+//  console.log(word[i]);
+// }
+
+
+
 // function reverse() {
 //  console.log("Hello");
 // }
