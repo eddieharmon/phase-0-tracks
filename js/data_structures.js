@@ -28,31 +28,39 @@ function Car(make, model, year, used) {
   console.log("CAR INITIALIZATION COMPLETE");
 }
 
+
+var firstCar = new Car("Toyota", "Camry", 1994, true);
+console.log(firstCar);
+firstCar.honk();
+
+var secondCar = new Car("Honda", "Accord", 2017, false);
+console.log(secondCar);
+secondCar.honk();
+
+var thirdCar = new Car ("Nissan", "Maxima", 2018, false);
+console.log(thirdCar);
+thirdCar.honk();
+
+
+//Literal Constructor
+
+var car = {
+  make: "Lincoln",
+  model: "Navigator",
+  year: 2015,
+  used: true,
+  honk: function() {
+    if (this.used) {
+    console.log("This car can blow its horn:");
+  } else {
+    console.log("HONK! HONK!");
+  }
 }
-// //Car Constructor
+};
 
-// function Car (make, model, year, used) {
-//   this.make = make;
-//   this.model = model;
-//   this.year = year;
-//   this.used = used;
-//   this.honk = function(){console.log("HONK! HONK!");};
+car.honk();
+// If the value of used changes to false, then the car will blow its horn.
 
-// }
-
-// var firstCar = new Car("Toyota", "Camry", 1994, true);
-// console.log(firstCar);
-// firstCar.honk();
-
-// var secondCar = new Car("BMW", "X5", 2001, true);
-// console.log(secondCar);
-// secondCar.honk();
-
-// var thirdCar = new Car("Honda", "Accord", 2017, false);
-// console.log(thirdCar);
-// thirdCar.honk();
-
-// //Literal Constructor
-
+//The below version makes the object. This one does not include a function.
 // var car = {make: "Trabant", model: "OstKruez" , year: 1975, used: true};
 // console.log(car);
