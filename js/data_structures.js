@@ -16,10 +16,19 @@ for(var i = 0; i <= names.length; i++) {
 
 console.log(horses);
 
+// Car Constructor
 
+function Car(make, model, year, used) {
+  console.log("Our new car:", this);
+  this.make = make;
+  this.model = model;
+  this.year = year;
+  this.used = used;
+  this.honk = function() { console.log("HONK! HONK!"); };
+  console.log("CAR INITIALIZATION COMPLETE");
+}
 
-
-
+}
 // //Car Constructor
 
 // function Car (make, model, year, used) {
