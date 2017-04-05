@@ -1,0 +1,89 @@
+1)Display the information in one table (either table is fine).
+SELECT * FROM patients;
+
+1|Al Coholic|57|true|1
+2|Oliver Klozoff|33|false|2
+3|I.P. Freely|2|true|1
+4|Seymour Butz|98|false|2
+5|Mike Krotch|61|true|2
+
+2)Update an item that meets some condition (you can choose a condition that makes sense).
+UPDATE patients SET new_patient="true" WHERE name="Seymour Butz";
+
+1|Al Coholic|57|true|1
+2|Oliver Klozoff|33|false|2
+3|I.P. Freely|2|true|1
+4|Seymour Butz|98|true|2
+5|Mike Krotch|61|true|2
+
+3)Display the information in both tables using one query.
+SELECT * FROM patients, doctors WHERE patients.doctor_id = doctors.id;
+
+1|Al Coholic|57|true|1|1|Sydney Pondexter, M.D.
+2|Oliver Klozoff|33|false|2|2|Elliot Fitzgerald, M.D.
+3|I.P. Freely|2|true|1|1|Sydney Pondexter, M.D.
+4|Seymour Butz|98|true|2|2|Elliot Fitzgerald, M.D.
+5|Mike Krotch|61|true|2|2|Elliot Fitzgerald, M.D.
+
+4)Display a narrower selection of columns (fewer columns than all of them, in other words) from both tables using one query.
+SELECT patients.name, doctors.name FROM patients JOIN doctors ON patients.doctor_id = doctors.id;
+
+Al Coholic|Sydney Pondexter, M.D.
+Oliver Klozoff|Elliot Fitzgerald, M.D.
+I.P. Freely|Sydney Pondexter, M.D.
+Seymour Butz|Elliot Fitzgerald, M.D.
+Mike Krotch|Elliot Fitzgerald, M.D.
+
+
+5)Delete an item that meets some condition (you can choose a condition that makes sense).
+DELETE FROM patients WHERE name="Mike Krotch";
+
+1|Al Coholic|57|true|1
+2|Oliver Klozoff|33|false|2
+3|I.P. Freely|2|true|1
+4|Seymour Butz|98|true|2
+
+(or if I use join...)
+
+Al Coholic|Sydney Pondexter, M.D.
+Oliver Klozoff|Elliot Fitzgerald, M.D.
+I.P. Freely|Sydney Pondexter, M.D.
+Seymour Butz|Elliot Fitzgerald, M.D.
+
+
+
+Release 3: Research on Your Own
+
+1)There are lots of different kinds of joins. What are they? Can you apply different conditions to a join to change what's displayed? Can you bookmark any good diagrams that will help you tell different joins apart in the future?
+
+Types of joins:
+1)INNER-JOIN (join)
+2)OUTER-JOIN
+  a)LEFT OUTER JOIN
+  b)RIGHT OUTER JOIN
+  c)FULL OUTER JOIN
+3)NATURAL JOIN
+4)CROSS JOIN
+5)SELF JOIN
+
+JOIN's based on Operators
+1)Equi JOIN
+2)Theta JOIN
+
+
+2)Try a few different joins in your database, and record the commands and the output in queries.txt.
+Here is a CROSS JOIN-Self Join
+Select * FROM patients A1, doctors A2;
+
+1|Al Coholic|57|true|1|1|Sydney Pondexter, M.D.
+1|Al Coholic|57|true|1|2|Elliot Fitzgerald, M.D.
+2|Oliver Klozoff|33|false|2|1|Sydney Pondexter, M.D.
+2|Oliver Klozoff|33|false|2|2|Elliot Fitzgerald, M.D.
+3|I.P. Freely|2|true|1|1|Sydney Pondexter, M.D.
+3|I.P. Freely|2|true|1|2|Elliot Fitzgerald, M.D.
+4|Seymour Butz|98|true|2|1|Sydney Pondexter, M.D.
+4|Seymour Butz|98|true|2|2|Elliot Fitzgerald, M.D.
+
+Here is a RIGHT JOIN
+Select * FROM patients A RIGHT OUTER JOIN doctors B On A.Pk = B.Fk;
+Error: RIGHT and FULL OUTER JOINs are not currently supported
