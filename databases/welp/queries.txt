@@ -1,0 +1,20 @@
+3)There are some repetitive columns if we choose to view all fields. Choose instead to just view the user's names, the business name, the star rating, and the comment.
+
+SELECT businesses.name,reviews.stars,users.first_name,reviews.comment FROM reviews INNER JOIN businesses ON reviews.business_id = businesses.id INNER JOIN users ON users.id = reviews.user_id;
+Grundy Hollow Wedding Chapel|5|Bradford|Great food!
+Amir's Towing|3|Angela|Terrible customer service!
+The Beagle Nightclub|4|Steven|Good people, bad location.
+Lotus Yoga|1|Mandy|I would give 0 stars if I could.
+
+(or, done in the same order as stated in question 3...)
+
+SELECT users.first_name, businesses.name, reviews.stars, reviews.comment FROM reviews INNER JOIN businesses ON reviews.business_id = businesses.id INNER JOIN users ON users.id = reviews.user_id;
+Bradford|Grundy Hollow Wedding Chapel|5|Great food!
+Angela|Amir's Towing|3|Terrible customer service!
+Steven|The Beagle Nightclub|4|Good people, bad location.
+Mandy|Lotus Yoga|1|I would give 0 stars if I could.
+
+
+4)How do you view the data of all three tables for just one particular business?
+SELECT * FROM reviews INNER JOIN businesses ON businesses.id = reviews.business_id INNER JOIN users ON users.id = reviews.user_id WHERE businesses.name = "The Beagle Nightclub";
+3|4|Good people, bad location.|3|4|3|The Beagle Nightclub|4|Steven|Wonder
