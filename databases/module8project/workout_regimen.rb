@@ -25,3 +25,4 @@ create_table_cmd_excercise = <<-SQL
 SQL
 
 db.execute(create_table_cmd)
+db.execute(create_table_cmd_excercise)
