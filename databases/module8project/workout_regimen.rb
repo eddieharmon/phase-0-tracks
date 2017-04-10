@@ -24,5 +24,20 @@ create_table_cmd_excercise = <<-SQL
   )
 SQL
 
+create_table_cmd_workout_regimen = <<-SQL
+  CREATE TABLE IF NOT EXISTS workout_regimen(
+    id INTEGER PRIMARY KEY,
+    day INT,
+    gym BOOLEAN,
+    reps INT,
+    workout_song VARCHAR(255),
+    exercise_id INT,
+    athlete_id INT,
+    FOREIGN KEY (exercise_id) REFERENCES exercise(id),
+    FOREIGN KEY (athlete_id) REFERENCES athlete(id)
+  )
+SQL
+
 db.execute(create_table_cmd)
 db.execute(create_table_cmd_excercise)
+db.execute(create_table_cmd_workout_regimen)
