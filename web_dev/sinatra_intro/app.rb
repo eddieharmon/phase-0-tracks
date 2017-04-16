@@ -25,7 +25,7 @@ end
 
 # A /great_job route that can take a person's name as a query parameter (not a route parameter) and say "Good job, [person's name]!". If the query parameter is not present, the route simply says "Good job!"
 get '/great_job' do
-  name = params [:name]
+  name = params[:name]
   if name
   "Good job, #{name}!"
   else
@@ -67,3 +67,42 @@ get '/students/:id' do
   student = db.execute("SELECT * FROM students WHERE id=?", [params[:id]])[0]
   student.to_s
 end
+
+
+# Is Sinatra the only web app library in Ruby? What are some others?
+# Sinatra is not the only web app library. I believe some others include:
+# Rails
+# Rack
+# Padrino
+# Cramp
+# Cuba
+# Merb
+# Camping
+# Hobo
+# Ramaze
+# Renee
+# Raptor
+# just to name a few.
+
+
+# Are SQLite and the sqlite3 gem your only options for using a database with Sinatra? What are some others?
+
+#SQlite and sqlite3 are not the only options for using a database with Sinatra. I believe some others include:
+
+# Mongo
+# ActiveRecord
+# Datamapper
+# Sequel
+# just to name a few
+
+
+
+# What is meant by the term web stack?
+
+# A Web stack is the collection of software required for Web development. LAMP is one commonly used Web stack. It uses Linux as the operating system, Apache as the Web server, MySQL as the relational database management system and PHP as the object-oriented scripting language. I believe this may include:
+# The Application Presentation
+# The Application Controls
+# The Application Models
+# HTTP Server (Apache, IIS, etc.)
+# Database
+# Operating System
