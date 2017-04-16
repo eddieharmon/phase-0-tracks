@@ -18,6 +18,10 @@ get '/about/:person' do
   person = params[:person]
   "#{person} is a programmer, and #{person} is learning Sinatra."
 end
+# Add a /contact route that displays an address (you can make up the address).
+get '/contact' do
+  "525 Atlantic Avenue, Brooklyn, NY 11217"
+end
 
 get '/:person_1/loves/:person_2' do
   "#{params[:person_1]} loves #{params[:person_2]}"
